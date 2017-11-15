@@ -27,6 +27,8 @@ admin.initializeApp({
 
 const database = admin.database()
 
+database.ref('lastStart').update(new Date())
+
 database.ref('taps').once('value', snap => {
   snap.forEach(tapSnap => {
     const tap = new KegScale(tapSnap.val()).watch()
