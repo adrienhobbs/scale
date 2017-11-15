@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-watch test.js",
+    "start": "babel-watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adrien Hobbs <adrien.hobbs@gmail.com> (http://hobbs.codes)",
